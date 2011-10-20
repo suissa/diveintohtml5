@@ -72,13 +72,19 @@ mas foi limitada por algumas das peculiaridades do Flash design.
 Em 2006, com o advento do <a href="http://www.adobe.com/livedocs/flash/9.0/ActionScriptLangRefV3/flash/external/ExternalInterface.html">ExternalInterface</a> no Flash 8, o acesso aos <abbr>LSO</abbr>s de JavaScript tornou-se uma ordem de magnitude mais fácil e mais rápido.
 
 
-Brad reescreveu <abbr> AMASS </abbr> e integrou na popular <a href=http://www.dojotoolkit.org/>Dojo Toolkit</a>
+Brad reescreveu <abbr>AMASS</abbr> e integrou na popular <a href=http://www.dojotoolkit.org/>Dojo Toolkit</a>
 sob a alcunha <a href="http://api.dojotoolkit.org/jsdoc/HEAD/dojox.storage.manager"> <code> dojox.storage </ code> </ a>.
 Flash dá a cada domínio 100 KB de armazenamento &#8220;de graça&#8221;.
 Além disso, ele solicita ao usuário para cada ordem de magnitude do aumento em armazenamento de dados (1 Mb, 10 Mb, e assim por diante).
 
 
-<p>In 2007, Google launched <a href="http://gears.google.com/">Gears</a>, an open source browser plugin aimed at providing additional capabilities in browsers. (We&#8217;ve previously discussed Gears in the context of <a href=geolocation.html#ie>providing a geolocation <abbr>API</abbr> in Internet Explorer</a>.) Gears provides <a href="http://code.google.com/apis/gears/api_database.html">an <abbr>API</abbr> to an embedded <abbr>SQL</abbr> database</a> based on <a href="http://www.sqlite.org/">SQLite</a>. After obtaining permission from the user once, Gears can store unlimited amounts of data per domain in <abbr>SQL</abbr> database tables.
+<p>Em 2007, o Google lançou <a href="http://gears.google.com/">Gears</a>, 
+um plugin, de código aberto, para o navegador destinado a fornecer recursos adicionais nos navegadores.
+(Nós já discutimos o Gears no contexto de <a href=geolocation.html#ie>fornecer <abbr>API</abbr> de geolocalização no Internet Explorer</a>.)
+Gears provê uma <a href="http://code.google.com/apis/gears/api_database.html"><abbr>API</abbr> 
+para um banco de dados <abbr>SQL</abbr> embutido</a> baseado no <a href="http://www.sqlite.org/">SQLite</a>. 
+Depois de obter a permissão do usuário uma vez,
+Gears pode armazenar quantidades ilimitadas de dados por domínio nas tabelas do banco de dados <abbr>SQL</ abbr>.
 
 <p>In the meantime, Brad Neuberg and others continued to hack away on <code>dojox.storage</code> to provide a unified interface to all these different plugins and <abbr>API</abbr>s. By 2009, <code>dojox.storage</code> could auto-detect (and provide a unified interface on top of) Adobe Flash, Gears, Adobe AIR, and an early prototype of <abbr>HTML5</abbr> storage that was only implemented in older versions of Firefox.
 
